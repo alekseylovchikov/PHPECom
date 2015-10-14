@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="PHP Shop" />
         <meta name="author" content="Aleksey Lovchikov" />
-        <title>Winter PHP Shop</title>
+        <title>Winter Shop</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css" />
         <link href="css/main.css" rel="stylesheet" />

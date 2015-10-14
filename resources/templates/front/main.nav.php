@@ -8,24 +8,30 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Winter PHP Shop</a>
+            <a class="navbar-brand" href="#">Winter Shop</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apple <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">iPhone</a></li>
-                        <li><a href="#">iPad</a></li>
-                        <li><a href="#">iPod</a></li>
-                        <li><a href="#">iMac</a></li>
-                        <li><a href="#">MacBook Pro</a></li>
-                        <li><a href="#">MacBook Air</a></li>
+                        <?php 
+                        
+                        // =begin show all categories
+                        $result = $shop->get_category();
+                        
+                        if ($result) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo '<li><a href="product/' . $row['cat_id'] . '">' . $row['cat_title'] . '</a></li>';
+                            }
+                        } else {
+                            echo "empty...";
+                        }
+                        // =end show all categories
+                        
+                        ?>
                     </ul>
-                </li>
-                <li>
-                    <a href="#">Samsung</a>
                 </li>
                 <li>
                     <a href="#">Contact</a>

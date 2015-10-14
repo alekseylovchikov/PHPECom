@@ -1,6 +1,10 @@
-<?php 
+<?php
 
-require_once("../resources/config.php");
+header("Content-Type: text/html; charset=utf-8");
+
+// BEGIN required functions and class
+require_once("../resources/Shop.class.php");
+// END required functions and class
 
 // create shop object
 $shop = new Shop();
@@ -15,8 +19,8 @@ $shop = new Shop();
             <div class="col-md-12" id="logo">
                 <div class="jumbotron">
                     <header>
-                        <h1 class="text-center">Winter PHP Shop</h1>
-                        <h4 class="text-center">by alekseylovchikov</h4>
+                        <h1 class="text-center">Winter Shop</h1>
+                        <h4 class="text-center">Borovichi</h4>
                     </header>
                 </div>
             </div>

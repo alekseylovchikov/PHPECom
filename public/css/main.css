@@ -26,3 +26,7 @@ footer p {
 .jumbotron {
     background: url(../img/back.jpg) no-repeat;
 }
+
+.glyphicon-star {
+    color: #FEBE5D;
+}

@@ -26,7 +26,3 @@ defined("DB_NAME") ? null : define("DB_NAME", "c9");
 // db port
 defined("DB_PORT") ? null : define("DB_PORT", 3306);
 // END data conect
-
-// BEGIN required functions and class
-require_once("Shop.class.php");
-// END required functions and class
