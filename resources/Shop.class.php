@@ -21,12 +21,8 @@ class Shop {
     }
     
     // sql injection
-    private function esc_string($string) {
-        $this->mysqli->escape_string($string);
-    }
-    
-    private function error_msg($text_message) {
-        return "<p class='alert alert-danger'>{$text_message}<br />";
+    public function esc_string($string) {
+        return $this->mysqli->escape_string($string);
     }
     
     // function for redirect to some page
@@ -34,25 +30,63 @@ class Shop {
         header("Location: {$location}");
     }
     
-    // function for get all category
-    public function get_category() {
-        $result = $this->mysqli->query("SELECT * FROM categories ORDER BY cat_title ASC");
+    // get all categories
+    public function get_all_categories() {
+        $result = $this->mysqli->query("SELECT cat_id, cat_title FROM categories ORDER BY cat_title ASC");
         
         if ($result) {
             return $result;
         } else {
-            die(error_msg("Error displayed categories") . $this->mysqli->error . "</p>");
+            die("<p class='alert alert-danger'>Error get categories<br />" . $this->mysqli->error . "</p>");
+        }
+    }
+    
+    // function for print categories
+    public function get_categories() {
+        $result = $this->get_all_categories();
+        
+        if ($result) {
+            return $result;
+        } else {
+            die("<p class='alert alert-danger'>Error get categories...<br />" . $this->mysqli->error . "</p>");
         }
     }
     
     // get 3 top products
     public function get_top_products() {
-        $result = $this->mysqli->query("SELECT * FROM products ORDER BY product_id ASC LIMIT 3");
+        $limit = 3;
+        $result = $this->mysqli->query("SELECT * FROM products ORDER BY product_id ASC LIMIT {$limit}");
         
         if ($result) {
             return $result;
         } else {
-            die(error_msg("Error displayed top products") . $this->mysqli->error . "</p>");
+            die("<p class='alert alert-danger'>Error get top product...<br />" . $this->mysqli->error . "</p>");
+        }
+    }
+    
+    public function get_new_product() {
+        $limit = 3;
+        $result = $this->mysqli->query("SELECT * FROM products ORDER BY product_id DESC LIMIT {$limit}");
+        
+        if ($result) {
+            return $result;
+        } else {
+            die("<p class='alert alert-danger'>Error get new product...<br />" . $this->mysqli->error . "</p>");
+        }
+    }
+    
+    public function get_product($id) {
+        $id = $this->esc_string($id);
+        $result = $this->mysqli->query("SELECT * FROM products WHERE product_id = {$id} LIMIT 1");
+        
+        if ($result) {
+            if ($result->num_rows > 0) {
+                return $result;
+            } else {
+                return false;   
+            }
+        } else {
+            die("<p class='alert alert-danger'>Error get product...<br />" . $this->mysqli->error . "</p>");
         }
     }
 }    

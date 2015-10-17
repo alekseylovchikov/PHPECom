@@ -11,3 +11,388 @@
 [12-Oct-2015 18:09:44 UTC] PHP Stack trace:
 [12-Oct-2015 18:09:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
 [12-Oct-2015 18:09:44 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:42
+[14-Oct-2015 09:07:46 UTC] PHP Fatal error:  Call to undefined function error_msg() in /home/ubuntu/workspace/resources/Shop.class.php on line 65
+[14-Oct-2015 09:07:46 UTC] PHP Stack trace:
+[14-Oct-2015 09:07:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[14-Oct-2015 09:07:46 UTC] PHP   2. Shop->get_product() /home/ubuntu/workspace/public/item.php:22
+[14-Oct-2015 09:08:14 UTC] PHP Fatal error:  Call to undefined function error_msg() in /home/ubuntu/workspace/resources/Shop.class.php on line 65
+[14-Oct-2015 09:08:14 UTC] PHP Stack trace:
+[14-Oct-2015 09:08:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[14-Oct-2015 09:08:14 UTC] PHP   2. Shop->get_product() /home/ubuntu/workspace/public/item.php:22
+[14-Oct-2015 09:09:49 UTC] PHP Fatal error:  Call to undefined function error_msg() in /home/ubuntu/workspace/resources/Shop.class.php on line 65
+[14-Oct-2015 09:09:49 UTC] PHP Stack trace:
+[14-Oct-2015 09:09:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[14-Oct-2015 09:09:49 UTC] PHP   2. Shop->get_product() /home/ubuntu/workspace/public/item.php:22
+[14-Oct-2015 09:10:24 UTC] PHP Fatal error:  Call to undefined function error_msg() in /home/ubuntu/workspace/resources/Shop.class.php on line 65
+[14-Oct-2015 09:10:24 UTC] PHP Stack trace:
+[14-Oct-2015 09:10:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[14-Oct-2015 09:10:24 UTC] PHP   2. Shop->get_product() /home/ubuntu/workspace/public/item.php:22
+[14-Oct-2015 09:23:42 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/public/item.php on line 26
+[14-Oct-2015 09:23:42 UTC] PHP Stack trace:
+[14-Oct-2015 09:23:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[14-Oct-2015 10:21:08 UTC] PHP Fatal error:  Call to undefined function get_categories() in /home/ubuntu/workspace/resources/templates/front/side.nav.php on line 3
+[14-Oct-2015 10:21:08 UTC] PHP Stack trace:
+[14-Oct-2015 10:21:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:21:08 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:29
+[14-Oct-2015 10:21:28 UTC] PHP Fatal error:  Call to undefined method mysqli::get_category() in /home/ubuntu/workspace/resources/Shop.class.php on line 70
+[14-Oct-2015 10:21:28 UTC] PHP Stack trace:
+[14-Oct-2015 10:21:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:21:28 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:29
+[14-Oct-2015 10:21:28 UTC] PHP   3. Shop->get_categories() /home/ubuntu/workspace/resources/templates/front/side.nav.php:3
+[14-Oct-2015 10:22:55 UTC] PHP Fatal error:  Call to undefined method Shop::get_category() in /home/ubuntu/workspace/resources/templates/front/main.nav.php on line 22
+[14-Oct-2015 10:22:55 UTC] PHP Stack trace:
+[14-Oct-2015 10:22:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:22:55 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:22:55 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:22:58 UTC] PHP Fatal error:  Call to undefined method Shop::get_category() in /home/ubuntu/workspace/resources/templates/front/main.nav.php on line 22
+[14-Oct-2015 10:22:58 UTC] PHP Stack trace:
+[14-Oct-2015 10:22:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:22:58 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:22:58 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:24:48 UTC] PHP Fatal error:  Call to undefined method Shop::get_category() in /home/ubuntu/workspace/resources/templates/front/main.nav.php on line 22
+[14-Oct-2015 10:24:48 UTC] PHP Stack trace:
+[14-Oct-2015 10:24:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:24:48 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:24:48 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:29:02 UTC] PHP Fatal error:  Call to undefined method Shop::get_category() in /home/ubuntu/workspace/resources/templates/front/main.nav.php on line 22
+[14-Oct-2015 10:29:02 UTC] PHP Stack trace:
+[14-Oct-2015 10:29:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:29:02 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:29:02 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:29:12 UTC] PHP Fatal error:  Call to undefined method Shop::get_category() in /home/ubuntu/workspace/resources/templates/front/main.nav.php on line 22
+[14-Oct-2015 10:29:12 UTC] PHP Stack trace:
+[14-Oct-2015 10:29:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:29:12 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:29:12 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:29:32 UTC] PHP Fatal error:  Call to undefined method Shop::get_category() in /home/ubuntu/workspace/resources/templates/front/main.nav.php on line 22
+[14-Oct-2015 10:29:32 UTC] PHP Stack trace:
+[14-Oct-2015 10:29:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:29:32 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:29:32 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:33:04 UTC] PHP Fatal error:  Call to undefined method Shop::get_category() in /home/ubuntu/workspace/resources/templates/front/main.nav.php on line 22
+[14-Oct-2015 10:33:04 UTC] PHP Stack trace:
+[14-Oct-2015 10:33:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:33:04 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:33:04 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:50:47 UTC] PHP Fatal error:  Call to undefined function get_all_categories() in /home/ubuntu/workspace/resources/Shop.class.php on line 60
+[14-Oct-2015 10:50:47 UTC] PHP Stack trace:
+[14-Oct-2015 10:50:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:50:47 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:50:47 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:50:47 UTC] PHP   4. Shop->get_categories_nav() /home/ubuntu/workspace/resources/templates/front/main.nav.php:19
+[14-Oct-2015 10:53:00 UTC] PHP Fatal error:  Call to undefined function get_all_categories() in /home/ubuntu/workspace/resources/Shop.class.php on line 60
+[14-Oct-2015 10:53:00 UTC] PHP Stack trace:
+[14-Oct-2015 10:53:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:53:00 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:53:00 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:53:00 UTC] PHP   4. Shop->get_categories_nav() /home/ubuntu/workspace/resources/templates/front/main.nav.php:19
+[14-Oct-2015 10:54:01 UTC] PHP Fatal error:  Call to undefined function get_all_categories() in /home/ubuntu/workspace/resources/Shop.class.php on line 45
+[14-Oct-2015 10:54:01 UTC] PHP Stack trace:
+[14-Oct-2015 10:54:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:54:01 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:29
+[14-Oct-2015 10:54:01 UTC] PHP   3. Shop->get_categories() /home/ubuntu/workspace/resources/templates/front/side.nav.php:3
+[14-Oct-2015 10:54:37 UTC] PHP Fatal error:  Call to undefined function get_all_categories() in /home/ubuntu/workspace/resources/Shop.class.php on line 60
+[14-Oct-2015 10:54:37 UTC] PHP Stack trace:
+[14-Oct-2015 10:54:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[14-Oct-2015 10:54:37 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:14
+[14-Oct-2015 10:54:37 UTC] PHP   3. require() /home/ubuntu/workspace/resources/templates/front/header.php:22
+[14-Oct-2015 10:54:37 UTC] PHP   4. Shop->get_categories_nav() /home/ubuntu/workspace/resources/templates/front/main.nav.php:19
+[14-Oct-2015 11:52:23 UTC] PHP Fatal error:  Cannot redeclare Shop::get_top_products() in /home/ubuntu/workspace/resources/Shop.class.php on line 82
+[14-Oct-2015 11:52:23 UTC] PHP Stack trace:
+[14-Oct-2015 11:52:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[14-Oct-2015 12:41:43 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ubuntu/workspace/public/item.php on line 38
+[14-Oct-2015 12:42:02 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ubuntu/workspace/public/item.php on line 38
+[14-Oct-2015 12:42:17 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ubuntu/workspace/public/item.php on line 38
+[14-Oct-2015 19:00:47 UTC] PHP Fatal error:  Call to undefined function esc_string() in /home/ubuntu/workspace/resources/Shop.class.php on line 176
+[14-Oct-2015 19:00:47 UTC] PHP Stack trace:
+[14-Oct-2015 19:00:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[14-Oct-2015 19:00:47 UTC] PHP   2. Shop->get_product() /home/ubuntu/workspace/public/item.php:32
+[14-Oct-2015 19:01:32 UTC] PHP Fatal error:  Call to undefined function esc_string() in /home/ubuntu/workspace/resources/Shop.class.php on line 176
+[14-Oct-2015 19:01:32 UTC] PHP Stack trace:
+[14-Oct-2015 19:01:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[14-Oct-2015 19:01:32 UTC] PHP   2. Shop->get_product() /home/ubuntu/workspace/public/item.php:32
+[14-Oct-2015 19:01:47 UTC] PHP Fatal error:  Call to undefined function esc_string() in /home/ubuntu/workspace/resources/Shop.class.php on line 176
+[14-Oct-2015 19:01:47 UTC] PHP Stack trace:
+[14-Oct-2015 19:01:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[14-Oct-2015 19:01:47 UTC] PHP   2. Shop->get_product() /home/ubuntu/workspace/public/item.php:32
+[15-Oct-2015 06:18:03 UTC] PHP Fatal error:  Class 'Fenom' not found in /home/ubuntu/workspace/resources/config.php on line 35
+[15-Oct-2015 06:18:03 UTC] PHP Stack trace:
+[15-Oct-2015 06:18:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:18:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:18:03 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:21:03 UTC] PHP Warning:  require(/home/ubuntu/workspace/resources../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/config.php on line 8
+[15-Oct-2015 06:21:03 UTC] PHP Stack trace:
+[15-Oct-2015 06:21:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:21:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:21:03 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:21:03 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/resources../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/config.php on line 8
+[15-Oct-2015 06:21:03 UTC] PHP Stack trace:
+[15-Oct-2015 06:21:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:21:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:21:03 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:21:36 UTC] PHP Warning:  require(..//home/ubuntu/workspace/resources/vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/config.php on line 8
+[15-Oct-2015 06:21:36 UTC] PHP Stack trace:
+[15-Oct-2015 06:21:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:21:36 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:21:36 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:21:36 UTC] PHP Fatal error:  require(): Failed opening required '..//home/ubuntu/workspace/resources/vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/config.php on line 8
+[15-Oct-2015 06:21:36 UTC] PHP Stack trace:
+[15-Oct-2015 06:21:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:21:36 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:21:36 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:26:42 UTC] PHP Fatal error:  Uncaught exception 'LogicException' with message 'Template directory templates/to/templates doesn't exists' in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(399): Fenom\Provider->__construct('templates/to/te...')
+#1 /home/ubuntu/workspace/resources/config.php(38): Fenom::factory('templates/to/te...', 'templates/to/co...', Array)
+#2 /home/ubuntu/workspace/resources/Shop.class.php(4): require_once('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/public/index.php(6): require_once('/home/ubuntu/wo...')
+#4 {main}
+  thrown in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php on line 74
+[15-Oct-2015 06:27:05 UTC] PHP Fatal error:  Uncaught exception 'LogicException' with message 'Template directory /templates/to/templates doesn't exists' in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(399): Fenom\Provider->__construct('/templates/to/t...')
+#1 /home/ubuntu/workspace/resources/config.php(38): Fenom::factory('/templates/to/t...', '/templates/to/c...', Array)
+#2 /home/ubuntu/workspace/resources/Shop.class.php(4): require_once('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/public/index.php(6): require_once('/home/ubuntu/wo...')
+#4 {main}
+  thrown in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php on line 74
+[15-Oct-2015 06:29:06 UTC] PHP Fatal error:  Uncaught exception 'LogicException' with message 'Template directory templates/to/templates doesn't exists' in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(399): Fenom\Provider->__construct('templates/to/te...')
+#1 /home/ubuntu/workspace/resources/config.php(38): Fenom::factory('templates/to/te...', 'templates/to/co...', Array)
+#2 /home/ubuntu/workspace/resources/Shop.class.php(4): require_once('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/public/index.php(6): require_once('/home/ubuntu/wo...')
+#4 {main}
+  thrown in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php on line 74
+[15-Oct-2015 06:32:43 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 38
+[15-Oct-2015 06:32:43 UTC] PHP Stack trace:
+[15-Oct-2015 06:32:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:32:43 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:32:43 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:33:29 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 40
+[15-Oct-2015 06:33:29 UTC] PHP Stack trace:
+[15-Oct-2015 06:33:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:33:29 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:33:29 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:34:58 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 40
+[15-Oct-2015 06:34:58 UTC] PHP Stack trace:
+[15-Oct-2015 06:34:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:34:58 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:34:58 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:39:36 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 40
+[15-Oct-2015 06:39:36 UTC] PHP Stack trace:
+[15-Oct-2015 06:39:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:39:36 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:39:36 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:44:51 UTC] PHP Warning:  require_once(/vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/config.php on line 8
+[15-Oct-2015 06:44:51 UTC] PHP Stack trace:
+[15-Oct-2015 06:44:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:44:51 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:44:51 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:44:51 UTC] PHP Fatal error:  require_once(): Failed opening required '/vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/config.php on line 8
+[15-Oct-2015 06:44:51 UTC] PHP Stack trace:
+[15-Oct-2015 06:44:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:44:51 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:44:51 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:45:08 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 40
+[15-Oct-2015 06:45:08 UTC] PHP Stack trace:
+[15-Oct-2015 06:45:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:45:08 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:45:08 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:46:53 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 35
+[15-Oct-2015 06:46:53 UTC] PHP Stack trace:
+[15-Oct-2015 06:46:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:46:53 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:46:53 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:47:43 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 41
+[15-Oct-2015 06:47:43 UTC] PHP Stack trace:
+[15-Oct-2015 06:47:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:47:43 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:47:43 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:50:51 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 42
+[15-Oct-2015 06:50:51 UTC] PHP Stack trace:
+[15-Oct-2015 06:50:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:50:51 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:50:51 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:51:10 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 42
+[15-Oct-2015 06:51:10 UTC] PHP Stack trace:
+[15-Oct-2015 06:51:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 06:51:10 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 06:51:10 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 06:51:28 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 41
+[15-Oct-2015 06:51:28 UTC] PHP Stack trace:
+[15-Oct-2015 06:51:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/config.php:0
+[15-Oct-2015 06:54:25 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 42
+[15-Oct-2015 06:54:25 UTC] PHP Stack trace:
+[15-Oct-2015 06:54:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/config.php:0
+[15-Oct-2015 06:54:28 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 42
+[15-Oct-2015 06:54:28 UTC] PHP Stack trace:
+[15-Oct-2015 06:54:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/config.php:0
+[15-Oct-2015 08:03:04 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 42
+[15-Oct-2015 08:03:04 UTC] PHP Stack trace:
+[15-Oct-2015 08:03:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:03:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:03:04 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:12:58 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 41
+[15-Oct-2015 08:12:58 UTC] PHP Stack trace:
+[15-Oct-2015 08:12:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:12:58 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:12:58 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:13:23 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 41
+[15-Oct-2015 08:13:23 UTC] PHP Stack trace:
+[15-Oct-2015 08:13:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:13:23 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:13:23 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:13:31 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 41
+[15-Oct-2015 08:13:31 UTC] PHP Stack trace:
+[15-Oct-2015 08:13:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:13:31 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:13:31 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:14:05 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 41
+[15-Oct-2015 08:14:05 UTC] PHP Stack trace:
+[15-Oct-2015 08:14:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:14:05 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:14:05 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:22:47 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 41
+[15-Oct-2015 08:22:47 UTC] PHP Stack trace:
+[15-Oct-2015 08:22:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:22:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:22:47 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:33:08 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 40
+[15-Oct-2015 08:33:08 UTC] PHP Stack trace:
+[15-Oct-2015 08:33:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:33:08 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:33:08 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:33:26 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 40
+[15-Oct-2015 08:33:26 UTC] PHP Stack trace:
+[15-Oct-2015 08:33:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:33:26 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:33:26 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:42:07 UTC] PHP Fatal error:  Class 'Provider' not found in /home/ubuntu/workspace/resources/config.php on line 40
+[15-Oct-2015 08:42:07 UTC] PHP Stack trace:
+[15-Oct-2015 08:42:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:42:07 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:42:07 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:54:21 UTC] PHP Catchable fatal error:  Argument 2 passed to Fenom::display() must be of the type array, string given, called in /home/ubuntu/workspace/resources/config.php on line 44 and defined in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php on line 920
+[15-Oct-2015 08:54:21 UTC] PHP Stack trace:
+[15-Oct-2015 08:54:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 08:54:21 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:6
+[15-Oct-2015 08:54:21 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/Shop.class.php:4
+[15-Oct-2015 08:54:21 UTC] PHP   4. Fenom->display() /home/ubuntu/workspace/resources/config.php:44
+[15-Oct-2015 08:55:36 UTC] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'Template template/hello.tpl not found' in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php:153
+Stack trace:
+#0 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php(95): Fenom\Provider->_getTemplatePath('template/hello....')
+#1 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Template.php(168): Fenom\Provider->getSource('template/hello....', 0)
+#2 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(1067): Fenom\Template->load('template/hello....')
+#3 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(1030): Fenom->compile('template/hello....', true, 192)
+#4 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(986): Fenom->_load('template/hello....', 192)
+#5 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(922): Fenom->getTemplate('template/hello....')
+#6 /home/ubuntu/workspace/resources/config.php(46): Fenom->display('template/hello....', Ar in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php on line 153
+[15-Oct-2015 08:56:06 UTC] PHP Fatal error:  Uncaught exception 'LogicException' with message 'Template directory /templates/to/templates doesn't exists' in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(399): Fenom\Provider->__construct('/templates/to/t...')
+#1 /home/ubuntu/workspace/resources/config.php(40): Fenom::factory('/templates/to/t...', '/templates/to/c...', Array)
+#2 /home/ubuntu/workspace/resources/Shop.class.php(4): require_once('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/public/index.php(6): require_once('/home/ubuntu/wo...')
+#4 {main}
+  thrown in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php on line 74
+[15-Oct-2015 08:56:36 UTC] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'Template template/hello.tpl not found' in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php:153
+Stack trace:
+#0 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php(95): Fenom\Provider->_getTemplatePath('template/hello....')
+#1 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Template.php(168): Fenom\Provider->getSource('template/hello....', 0)
+#2 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(1067): Fenom\Template->load('template/hello....')
+#3 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(1030): Fenom->compile('template/hello....', true, 192)
+#4 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(986): Fenom->_load('template/hello....', 192)
+#5 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(922): Fenom->getTemplate('template/hello....')
+#6 /home/ubuntu/workspace/resources/config.php(46): Fenom->display('template/hello....', Ar in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php on line 153
+[15-Oct-2015 08:57:00 UTC] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'Template templates/hello.tpl not found' in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php:153
+Stack trace:
+#0 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php(95): Fenom\Provider->_getTemplatePath('templates/hello...')
+#1 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Template.php(168): Fenom\Provider->getSource('templates/hello...', 0)
+#2 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(1067): Fenom\Template->load('templates/hello...')
+#3 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(1030): Fenom->compile('templates/hello...', true, 192)
+#4 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(986): Fenom->_load('templates/hello...', 192)
+#5 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(922): Fenom->getTemplate('templates/hello...')
+#6 /home/ubuntu/workspace/resources/config.php(46): Fenom->display('templates/hello...', A in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom/Provider.php on line 153
+[15-Oct-2015 09:02:59 UTC] PHP Warning:  require_once(../resources/model/shop.model.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/index.php on line 9
+[15-Oct-2015 09:02:59 UTC] PHP Stack trace:
+[15-Oct-2015 09:02:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 09:02:59 UTC] PHP Fatal error:  require_once(): Failed opening required '../resources/model/shop.model.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/index.php on line 9
+[15-Oct-2015 09:02:59 UTC] PHP Stack trace:
+[15-Oct-2015 09:02:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 09:03:12 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/resources/models/shop.model.php on line 5
+[15-Oct-2015 09:03:12 UTC] PHP Stack trace:
+[15-Oct-2015 09:03:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 09:03:24 UTC] PHP Fatal error:  Call to a member function get_categories_nav() on a non-object in /home/ubuntu/workspace/resources/models/shop.model.php on line 3
+[15-Oct-2015 09:03:24 UTC] PHP Stack trace:
+[15-Oct-2015 09:03:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 09:03:24 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:9
+[15-Oct-2015 09:05:27 UTC] PHP Fatal error:  Call to a member function get_categories_nav() on a non-object in /home/ubuntu/workspace/resources/models/shop.model.php on line 3
+[15-Oct-2015 09:05:27 UTC] PHP Stack trace:
+[15-Oct-2015 09:05:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 09:05:27 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:9
+[15-Oct-2015 09:05:54 UTC] PHP Fatal error:  Call to a member function get_categories_nav() on a non-object in /home/ubuntu/workspace/resources/models/shop.model.php on line 3
+[15-Oct-2015 09:05:54 UTC] PHP Stack trace:
+[15-Oct-2015 09:05:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 09:05:54 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:9
+[15-Oct-2015 09:06:48 UTC] PHP Fatal error:  Call to a member function get_all_categories() on a non-object in /home/ubuntu/workspace/resources/models/shop.model.php on line 3
+[15-Oct-2015 09:06:48 UTC] PHP Stack trace:
+[15-Oct-2015 09:06:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 09:06:48 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:9
+[15-Oct-2015 10:00:13 UTC] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'Undefined parameter 1' in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php:1140
+Stack trace:
+#0 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(806): Fenom::_makeMask(Array, Array, 0)
+#1 /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php(409): Fenom->setOptions(Array)
+#2 /home/ubuntu/workspace/resources/config.php(42): Fenom::factory('/home/ubuntu/wo...', '/home/ubuntu/wo...', Array)
+#3 /home/ubuntu/workspace/resources/Shop.class.php(4): require_once('/home/ubuntu/wo...')
+#4 /home/ubuntu/workspace/public/index.php(4): require_once('/home/ubuntu/wo...')
+#5 {main}
+  thrown in /home/ubuntu/workspace/resources/vendor/fenom/fenom/src/Fenom.php on line 1140
+[15-Oct-2015 11:22:07 UTC] PHP Fatal error:  Call to a member function display() on a non-object in /home/ubuntu/workspace/resources/models/shop.model.php on line 14
+[15-Oct-2015 11:22:07 UTC] PHP Stack trace:
+[15-Oct-2015 11:22:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 11:22:07 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/index.php:10
+[15-Oct-2015 11:43:20 UTC] PHP Fatal error:  Uncaught  --> Smarty: Call of unknown method 'template_dir'. <-- 
+  thrown in /home/ubuntu/workspace/resources/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php on line 554
+[15-Oct-2015 11:44:46 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/public/index.php on line 12
+[15-Oct-2015 11:44:46 UTC] PHP Stack trace:
+[15-Oct-2015 11:44:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 11:45:20 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template file 'index.tpl' <-- 
+  thrown in /home/ubuntu/workspace/resources/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 219
+[15-Oct-2015 11:46:59 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template file 'index.tpl' <-- 
+  thrown in /home/ubuntu/workspace/resources/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 219
+[15-Oct-2015 12:07:02 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template file '/front/main.nav.tpl' <-- 
+  thrown in /home/ubuntu/workspace/resources/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 219
+[15-Oct-2015 12:23:00 UTC] PHP Warning:  require(/home/ubuntu/workspace/resources/templates/front/main.nav.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/templates/front/header.php on line 22
+[15-Oct-2015 12:23:00 UTC] PHP Stack trace:
+[15-Oct-2015 12:23:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 12:23:00 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:11
+[15-Oct-2015 12:23:00 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/resources/templates/front/main.nav.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/templates/front/header.php on line 22
+[15-Oct-2015 12:23:00 UTC] PHP Stack trace:
+[15-Oct-2015 12:23:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 12:23:00 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:11
+[15-Oct-2015 12:42:19 UTC] PHP Warning:  require(/home/ubuntu/workspace/resources/templates/front/header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/item.php on line 14
+[15-Oct-2015 12:42:19 UTC] PHP Stack trace:
+[15-Oct-2015 12:42:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[15-Oct-2015 12:42:19 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/resources/templates/front/header.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/item.php on line 14
+[15-Oct-2015 12:42:19 UTC] PHP Stack trace:
+[15-Oct-2015 12:42:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[15-Oct-2015 12:43:18 UTC] PHP Warning:  require(/home/ubuntu/workspace/resources/templates/front/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/item.php on line 37
+[15-Oct-2015 12:43:18 UTC] PHP Stack trace:
+[15-Oct-2015 12:43:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[15-Oct-2015 12:43:18 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/resources/templates/front/footer.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/item.php on line 37
+[15-Oct-2015 12:43:18 UTC] PHP Stack trace:
+[15-Oct-2015 12:43:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[15-Oct-2015 12:53:44 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/public/index.php on line 60
+[15-Oct-2015 12:53:44 UTC] PHP Stack trace:
+[15-Oct-2015 12:53:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[15-Oct-2015 13:32:46 UTC] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "/home/ubuntu/workspace/resources/templates/front/product.tpl"  on line 14 "{assign var=counter value=--$counter}"  - Unexpected "--" <-- 
+  thrown in /home/ubuntu/workspace/resources/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 14
+[16-Oct-2015 12:10:48 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/public/item.php on line 67
+[16-Oct-2015 12:10:48 UTC] PHP Stack trace:
+[16-Oct-2015 12:10:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[16-Oct-2015 12:12:45 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/public/item.php on line 67
+[16-Oct-2015 12:12:45 UTC] PHP Stack trace:
+[16-Oct-2015 12:12:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[16-Oct-2015 12:33:47 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template file 'front/main.nav.tpl' <-- 
+  thrown in /home/ubuntu/workspace/resources/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 219

@@ -1,17 +1,31 @@
 <?php
 
-header("Content-Type: text/html; charset=utf-8");
-
-// BEGIN required functions and class
+// required functions and main class
 require_once("../resources/Shop.class.php");
-// END required functions and class
 
-// create shop object
+// create object
 $shop = new Shop();
 
 ?>
 
-<?php require(TEMPLATE_FRONT . DS . "header.php"); ?>
+<?php
+                    
+$result = $shop->get_all_categories();
+
+$data = array();
+
+while ($r = $result->fetch_assoc()) {
+    $data[] = array(
+        "id" => $r['cat_id'],
+        "title" => $r['cat_title']
+    );
+}
+
+$smarty->assign("categories", $data);
+
+$smarty->display("front/header.tpl");
+
+?>
 
     <!-- Page Content -->
     <div class="container">
@@ -19,31 +33,105 @@ $shop = new Shop();
             <div class="col-md-12" id="logo">
                 <div class="jumbotron">
                     <header>
-                        <h1 class="text-center">Winter Shop</h1>
-                        <h4 class="text-center">Borovichi</h4>
+                        <h1 class="text-center logo-color">BrandShop</h1>
                     </header>
                 </div>
             </div>
-            <!-- categories -->
             
-            <?php require(TEMPLATE_FRONT . DS . "side.nav.php"); ?>
+            <!-- categories -->
+            <div class="col-md-3">
+                <h4>Категории</h4>
+                <div class="list-group">
+                    <?php
+                    
+                    $result = $shop->get_all_categories();
+                    
+                    $data = array();
+                    
+                    while ($r = $result->fetch_assoc()) {
+                        $data[] = array(
+                            "id" => $r['cat_id'],
+                            "title" => $r['cat_title']
+                        );
+                    }
+                    
+                    $smarty->assign("categories", $data);
+                    
+                    $smarty->display("front/aside.categories.tpl");
+                    
+                    ?>
+                </div>
+            </div><!-- end categories -->
             
             <div class="col-md-9">
                 <div class="row carousel-holder">
                     <!-- carousel -->
-                    <?php require(TEMPLATE_FRONT . DS . "carousel.php"); ?>
+                    <?php $smarty->display("front/carousel.tpl"); ?>
                 </div>
                 
                 <div class="row">
                     <div class="col-sm-12 col-lg-12 col-md-12">
-                        <h4 class="alert alert-warning text-center">Top Products</h4>
+                        <h4 class="alert alert-danger text-center">Новинки</h4>
                     </div>
+                    
+                    <!-- new products -->
+                    <?php
+                    
+                    $result = $shop->get_new_product();
+                    
+                    $data = array();
+                    
+                    while ($r = $result->fetch_assoc()) {
+                        $data[] = array(
+                            "id" => $r['product_id'],
+                            "title" => $r['product_title'],
+                            "desc" => $r['product_description'],
+                            "rating" => $r['product_rating'],
+                            "image" => $r['product_image'],
+                            "price" => $r['product_price']
+                        );
+                    }
+                    
+                    $smarty->assign("products", $data);
+                    
+                    $smarty->display("front/new.products.tpl");
+                    
+                    ?>
+                    <!-- end new products -->
+                    
+                    <div class="col-sm-12 col-lg-12 col-md-12">
+                        <h4 class="alert alert-warning text-center">Популярные товары</h4>
+                    </div>
+                    
                     <!-- top products -->
-                    <?php require(TEMPLATE_FRONT . DS . "top.products.php"); ?>
+                    <?php
+                    
+                    $result = $shop->get_top_products();
+                    
+                    $data = array();
+                    
+                    while ($r = $result->fetch_assoc()) {
+                        $data[] = array(
+                            "id" => $r['product_id'],
+                            "title" => $r['product_title'],
+                            "desc" => $r['product_description'],
+                            "rating" => $r['product_rating'],
+                            "image" => $r['product_image'],
+                            "price" => $r['product_price']
+                        );
+                    }
+                    
+                    $smarty->assign("products", $data);
+                    
+                    $smarty->display("front/top.products.tpl");
+                    
+                    ?>
+                    <!-- end top products -->
+                    
                 </div>
             </div>
         </div>
     </div>
     <!-- /.container -->
     
-<?php require(TEMPLATE_FRONT . DS . "footer.php"); ?>
+<?php $smarty->display("front/footer.tpl"); ?>
