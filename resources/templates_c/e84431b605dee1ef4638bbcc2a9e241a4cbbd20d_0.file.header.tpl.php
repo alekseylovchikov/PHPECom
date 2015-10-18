@@ -1,19 +1,19 @@
-<?php /* Smarty version 3.1.27, created on 2015-10-18 17:18:56
-         compiled from "/home/ubuntu/workspace/resources/templates/front/header.tpl" */ ?>
+<?php /* Smarty version 3.1.27, created on 2015-10-18 18:59:49
+         compiled from "/opt/lampp/htdocs/ecom/resources/templates/front/header.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1655273135623d480f3f507_05990571%%*/
+/*%%SmartyHeaderCode:4510854495623d005a380e2_68384987%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '486ab8815a86bef645283f75b3a374ce6662f49a' => 
+    'e84431b605dee1ef4638bbcc2a9e241a4cbbd20d' => 
     array (
-      0 => '/home/ubuntu/workspace/resources/templates/front/header.tpl',
-      1 => 1445188708,
+      0 => '/opt/lampp/htdocs/ecom/resources/templates/front/header.tpl',
+      1 => 1445187586,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1655273135623d480f3f507_05990571',
+  'nocache_hash' => '4510854495623d005a380e2_68384987',
   'variables' => 
   array (
     'categories' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5623d481039567_76925108',
+  'unifunc' => 'content_5623d005ad7604_07882019',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5623d481039567_76925108')) {
-function content_5623d481039567_76925108 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5623d005ad7604_07882019')) {
+function content_5623d005ad7604_07882019 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1655273135623d480f3f507_05990571';
+$_smarty_tpl->properties['nocache_hash'] = '4510854495623d005a380e2_68384987';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +63,7 @@ $_smarty_tpl->properties['nocache_hash'] = '1655273135623d480f3f507_05990571';
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/public/">BrandShop</a>
+                    <a class="navbar-brand" href="/ecom/public/">BrandShop</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

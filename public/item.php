@@ -71,10 +71,19 @@ $smarty->display("front/header.tpl");
                         "desc" => $r['product_description'],
                         "image" => $r['product_image'],
                         "price" => number_format($r['product_price']),
-                        "rating" => $r['product_rating']
+                        "rating" => $r['product_rating'],
+                        "category" => $r['product_category_id']
                     );
+
+                    // get category name for this product
+                    $category = $shop->get_category($product['category']);
+                    $r_cat = $category->fetch_assoc();
+
+                    $category_title = $r_cat['cat_title'];
                     
+                    // assign all to item
                     $smarty->assign("product", $product);
+                    $smarty->assign("category_name", $category_title);
                     
                     $smarty->display("front/product.tpl");   
                 } else {

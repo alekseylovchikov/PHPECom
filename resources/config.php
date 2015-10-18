@@ -9,8 +9,6 @@ session_start();
 // include composer components
 require_once("vendor/autoload.php");
 
-// defined("DS") ? null : define("DS", DIRECTORY_SEPARATOR);
-
 defined("DB_HOST") ? null : define("DB_HOST", "127.0.0.1");
 defined("DB_USER") ? null : define("DB_USER", "alekseylovchikov");
 defined("DB_PASS") ? null : define("DB_PASS", "");

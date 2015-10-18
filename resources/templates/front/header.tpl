@@ -49,8 +49,8 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Корзина</a></li>
-                        <li><a href="#">Войти</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Корзина <span class=badge>3</span></a></li>
+                        <li><a href="login.php">Войти</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->    

@@ -52,6 +52,27 @@ class Shop {
         }
     }
     
+    // confirm return data from query
+    private function confirm($result) {
+        if ($result->num_rows > 0) {
+            return $result;
+        } else {
+            return false;   
+        }
+    }
+    
+    // get category for product
+    public function get_category($category_id) {
+        $id = $this->esc_string($category_id);
+        $result = $this->mysqli->query("SELECT * FROM categories WHERE cat_id = {$id} LIMIT 1");
+
+        if ($result) {
+            return $this->confirm($result);
+        } else {
+            return false;
+        }
+    }
+    
     // get 3 top products
     public function get_top_products() {
         $limit = 3;
@@ -64,7 +85,8 @@ class Shop {
         }
     }
     
-    public function get_new_product() {
+    // get new products
+    public function get_new_products() {
         $limit = 3;
         $result = $this->mysqli->query("SELECT * FROM products ORDER BY product_id DESC LIMIT {$limit}");
         
@@ -75,18 +97,27 @@ class Shop {
         }
     }
     
+    // get product
     public function get_product($id) {
         $id = $this->esc_string($id);
         $result = $this->mysqli->query("SELECT * FROM products WHERE product_id = {$id} LIMIT 1");
         
         if ($result) {
-            if ($result->num_rows > 0) {
-                return $result;
-            } else {
-                return false;   
-            }
+            return $this->confirm($result);
         } else {
             die("<p class='alert alert-danger'>Error get product...<br />" . $this->mysqli->error . "</p>");
+        }
+    }
+
+    // get products by one category
+    public function get_products($id) {
+        $id = $this->esc_string($id);
+        $result = $this->mysqli->query("SELECT * FROM products WHERE product_category_id = {$id} ORDER BY product_title ASC");
+
+        if ($result) {
+            return $this->confirm($result);
+        } else {
+            return false;
         }
     }
 }    

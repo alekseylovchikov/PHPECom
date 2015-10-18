@@ -9,9 +9,11 @@ $shop = new Shop();
 ?>
 
 <?php
-                    
+
+// get all categories
 $result = $shop->get_all_categories();
 
+// init empty array for get categories
 $data = array();
 
 while ($r = $result->fetch_assoc()) {
@@ -21,8 +23,10 @@ while ($r = $result->fetch_assoc()) {
     );
 }
 
+// assign all categories to header page
 $smarty->assign("categories", $data);
 
+// show header
 $smarty->display("front/header.tpl");
 
 ?>
@@ -57,32 +61,53 @@ $smarty->display("front/header.tpl");
             <?php
 
             if (isset($_GET['id']) && !empty($_GET['id'])) {
-                $product_id = intval($_GET['id']);
+                $category_id = intval($_GET['id']);
                 
                 // function get product by id
-                $result = $shop->get_product($product_id);
+                $result = $shop->get_category($category_id);
                 
                 if ($result) {
                     $r = $result->fetch_assoc();
                     
-                    $product = array(
-                        "id" => $r['product_id'],
-                        "title" => $r['product_title'],
-                        "desc" => $r['product_description'],
-                        "image" => $r['product_image'],
-                        "price" => number_format($r['product_price']),
-                        "rating" => $r['product_rating']
+                    $category = array(
+                        "id" => $r['cat_id'],
+                        "title" => $r['cat_title']
                     );
-                    
-                    $smarty->assign("product", $product);
-                    
-                    $smarty->display("front/product.tpl");   
+
+                    // get products from category id
+                    $products = $shop->get_products($category['id']);
+
+                    // init empty array for products
+                    $products_data = array();
+
+                    if ($products) {
+                        while ($product = $products->fetch_assoc()) {
+                            $products_data[] = array(
+                                "id" => $product['product_id'],
+                                "title" => $product['product_title'],
+                                "desc" => $product['product_description'],
+                                "image" => $product['product_image'],
+                                "price" => $product['product_price'],
+                                "rating" => $product['product_rating']
+                            );
+                        }
+
+                        // assign all data for category page
+                        $smarty->assign("category", $category);
+                        $smarty->assign("products", $products_data);
+
+                        // display category page
+                        $smarty->display("front/category.tpl");
+                    } else {
+                        $smarty->display("front/404.tpl");
+                    }
                 } else {
+                    // display not found page
                     $smarty->display("front/404.tpl");
                 }
             } else {
                 // redirect to home page if get id not set
-                $shop->redirect("/public/");
+                $shop->redirect("/ecom/public/");
             }
             
             ?>    

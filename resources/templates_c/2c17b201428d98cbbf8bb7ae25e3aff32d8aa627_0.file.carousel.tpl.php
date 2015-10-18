@@ -1,28 +1,28 @@
-<?php /* Smarty version 3.1.27, created on 2015-10-18 17:08:52
-         compiled from "/home/ubuntu/workspace/resources/templates/front/carousel.tpl" */ ?>
+<?php /* Smarty version 3.1.27, created on 2015-10-17 11:42:10
+         compiled from "/opt/lampp/htdocs/ecom/resources/templates/front/carousel.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:10614307235623d2242dc7d1_77913751%%*/
+/*%%SmartyHeaderCode:877943645562217f23e80d9_66474635%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '41989c1014abbd07e034f1d011be95a11bfa059d' => 
+    '2c17b201428d98cbbf8bb7ae25e3aff32d8aa627' => 
     array (
-      0 => '/home/ubuntu/workspace/resources/templates/front/carousel.tpl',
-      1 => 1445188068,
+      0 => '/opt/lampp/htdocs/ecom/resources/templates/front/carousel.tpl',
+      1 => 1444997250,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '10614307235623d2242dc7d1_77913751',
+  'nocache_hash' => '877943645562217f23e80d9_66474635',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5623d2242e0c12_39175300',
+  'unifunc' => 'content_562217f24441f3_30178914',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5623d2242e0c12_39175300')) {
-function content_5623d2242e0c12_39175300 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_562217f24441f3_30178914')) {
+function content_562217f24441f3_30178914 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '10614307235623d2242dc7d1_77913751';
+$_smarty_tpl->properties['nocache_hash'] = '877943645562217f23e80d9_66474635';
 ?>
 <div class="col-md-12">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

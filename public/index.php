@@ -27,17 +27,15 @@ $smarty->display("front/header.tpl");
 
 ?>
 
+    <div class="jumbotron">
+        <header class="container">
+            <h1 class="text-center"><span class="label label-info">BrandShop</span></h1>
+        </header>
+    </div>
+
     <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-12" id="logo">
-                <div class="jumbotron">
-                    <header>
-                        <h1 class="text-center logo-color">BrandShop</h1>
-                    </header>
-                </div>
-            </div>
-            
             <!-- categories -->
             <div class="col-md-3">
                 <h4>Категории</h4>
@@ -77,7 +75,7 @@ $smarty->display("front/header.tpl");
                     <!-- new products -->
                     <?php
                     
-                    $result = $shop->get_new_product();
+                    $result = $shop->get_new_products();
                     
                     $data = array();
                     
