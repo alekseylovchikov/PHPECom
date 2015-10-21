@@ -26,11 +26,15 @@ $smarty->assign("categories", $data);
 $smarty->display("front/header.tpl");
 
 ?>
-
-    <div class="jumbotron">
-        <header class="container">
+    
+    <!--<div class="jumbotron">
+        <div class="jumbotron-contents">
             <h1 class="text-center"><span class="label label-info">BrandShop</span></h1>
-        </header>
+        </div>
+    </div>-->
+    
+    <div class="main-header">
+        <h1 class="text-center"><span class="label label-info">BrandShop</span></h1>
     </div>
 
     <!-- Page Content -->
@@ -85,7 +89,7 @@ $smarty->display("front/header.tpl");
                             "title" => $r['product_title'],
                             "desc" => $r['product_description'],
                             "rating" => $r['product_rating'],
-                            "image" => $r['product_image'],
+                            "image" => explode(",", $r['product_image'])[0],
                             "price" => $r['product_price']
                         );
                     }
@@ -114,7 +118,7 @@ $smarty->display("front/header.tpl");
                             "title" => $r['product_title'],
                             "desc" => $r['product_description'],
                             "rating" => $r['product_rating'],
-                            "image" => $r['product_image'],
+                            "image" => explode(",", $r['product_image'])[0],
                             "price" => $r['product_price']
                         );
                     }

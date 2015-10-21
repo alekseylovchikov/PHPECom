@@ -75,7 +75,13 @@ $smarty->display("front/header.tpl");
                     );
 
                     // get products from category id
-                    $products = $shop->get_products($category['id']);
+                    if (isset($_GET['price']) && ($_GET['price'] == "toup" || $_GET['price'] == "todown")) {
+                        $sort = $_GET['price'];
+                    } else {
+                        $sort = "";
+                    }
+                    
+                    $products = $shop->get_products($category['id'], $sort);
 
                     // init empty array for products
                     $products_data = array();
@@ -86,7 +92,7 @@ $smarty->display("front/header.tpl");
                                 "id" => $product['product_id'],
                                 "title" => $product['product_title'],
                                 "desc" => $product['product_description'],
-                                "image" => $product['product_image'],
+                                "image" => explode(",", $product['product_image'])[0],
                                 "price" => $product['product_price'],
                                 "rating" => $product['product_rating']
                             );
@@ -95,6 +101,7 @@ $smarty->display("front/header.tpl");
                         // assign all data for category page
                         $smarty->assign("category", $category);
                         $smarty->assign("products", $products_data);
+                        $smarty->assign("sort_url", $sort_url);
 
                         // display category page
                         $smarty->display("front/category.tpl");
@@ -107,7 +114,7 @@ $smarty->display("front/header.tpl");
                 }
             } else {
                 // redirect to home page if get id not set
-                $shop->redirect("/ecom/public/");
+                $shop->redirect("/public/");
             }
             
             ?>    

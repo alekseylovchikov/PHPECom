@@ -37,7 +37,7 @@ $smarty->display("front/header.tpl");
 	  			<div class="panel-body">
 	   				<form role="form">
 	  					<div class="form-group">
-	    					<label for="exampleInputEmail1">Логин или Email</label>
+	    					<label for="exampleInputEmail1">Email или логин</label>
 	    					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email или логин" />
 	  					</div>
 	  					<div class="form-group">

@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-10-18 17:18:56
+<?php /* Smarty version 3.1.27, created on 2015-10-21 17:52:44
          compiled from "/home/ubuntu/workspace/resources/templates/front/header.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1655273135623d480f3f507_05990571%%*/
+/*%%SmartyHeaderCode:3480771925627d0ec48f7e2_76946690%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '486ab8815a86bef645283f75b3a374ce6662f49a' => 
     array (
       0 => '/home/ubuntu/workspace/resources/templates/front/header.tpl',
-      1 => 1445188708,
+      1 => 1445431980,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1655273135623d480f3f507_05990571',
+  'nocache_hash' => '3480771925627d0ec48f7e2_76946690',
   'variables' => 
   array (
     'categories' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5623d481039567_76925108',
+  'unifunc' => 'content_5627d0ec4a7750_59404820',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5623d481039567_76925108')) {
-function content_5623d481039567_76925108 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5627d0ec4a7750_59404820')) {
+function content_5627d0ec4a7750_59404820 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1655273135623d480f3f507_05990571';
+$_smarty_tpl->properties['nocache_hash'] = '3480771925627d0ec48f7e2_76946690';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,9 +38,14 @@ $_smarty_tpl->properties['nocache_hash'] = '1655273135623d480f3f507_05990571';
         <meta name="description" content="PHP Shop" />
         <meta name="author" content="Aleksey Lovchikov" />
         <title>BrandShop</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css" />
-        <link href="css/main.css" rel="stylesheet" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootflat.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        
+        <link  href="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>

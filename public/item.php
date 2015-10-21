@@ -69,11 +69,12 @@ $smarty->display("front/header.tpl");
                         "id" => $r['product_id'],
                         "title" => $r['product_title'],
                         "desc" => $r['product_description'],
-                        "image" => $r['product_image'],
                         "price" => number_format($r['product_price']),
                         "rating" => $r['product_rating'],
                         "category" => $r['product_category_id']
                     );
+                    
+                    $images = explode(",", $r['product_image']);
 
                     // get category name for this product
                     $category = $shop->get_category($product['category']);
@@ -83,6 +84,7 @@ $smarty->display("front/header.tpl");
                     
                     // assign all to item
                     $smarty->assign("product", $product);
+                    $smarty->assign("images", $images);
                     $smarty->assign("category_name", $category_title);
                     
                     $smarty->display("front/product.tpl");   

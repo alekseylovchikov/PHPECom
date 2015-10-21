@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-10-18 17:48:39
+<?php /* Smarty version 3.1.27, created on 2015-10-21 18:07:17
          compiled from "/home/ubuntu/workspace/resources/templates/front/category.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:2078176345623db77b9c990_40285399%%*/
+/*%%SmartyHeaderCode:9275305915627d45574ac64_40836661%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,26 +9,29 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e60b7ca02ce43ac36881dadefe206310918eb753' => 
     array (
       0 => '/home/ubuntu/workspace/resources/templates/front/category.tpl',
-      1 => 1445190515,
+      1 => 1445450834,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2078176345623db77b9c990_40285399',
+  'nocache_hash' => '9275305915627d45574ac64_40836661',
   'variables' => 
   array (
     'category' => 0,
     'products' => 0,
+    'count' => 0,
+    'i' => 0,
     'product' => 0,
+    'counter' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5623db77be74b3_96798651',
+  'unifunc' => 'content_5627d455794480_60037356',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5623db77be74b3_96798651')) {
-function content_5623db77be74b3_96798651 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5627d455794480_60037356')) {
+function content_5627d455794480_60037356 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '2078176345623db77b9c990_40285399';
+$_smarty_tpl->properties['nocache_hash'] = '9275305915627d45574ac64_40836661';
 ?>
 <div class="row">
 	<div class="col-md-12">
@@ -38,6 +41,23 @@ $_smarty_tpl->properties['nocache_hash'] = '2078176345623db77b9c990_40285399';
 </li>
 		</ol>
 	</div>
+	<div class="col-md-12">
+		<div class="well">
+			<div class="btn-group">
+				<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Сортировать по <span class="caret"></span>
+			  	</button>
+				<ul class="dropdown-menu">
+			    	<li><a href="?id=<?php echo $_smarty_tpl->tpl_vars['category']->value['id'];?>
+&price=toup">возростанию цены</a></li>
+			    	<li><a href="?id=<?php echo $_smarty_tpl->tpl_vars['category']->value['id'];?>
+&price=todown">убыванию цены</a></li>
+			  	</ul>
+			</div>
+		</div>
+	</div>
+	<?php $_smarty_tpl->tpl_vars['count'] = new Smarty_Variable(0, null, 0);?>
+	
 	<?php
 $_from = $_smarty_tpl->tpl_vars['products']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -49,11 +69,45 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 $_smarty_tpl->tpl_vars['product']->_loop = true;
 $foreach_product_Sav = $_smarty_tpl->tpl_vars['product'];
 ?>
-		<div class="col-md-4">
+		<?php $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable($_smarty_tpl->tpl_vars['count']->value++, null, 0);?>
+		
+		<?php if ($_smarty_tpl->tpl_vars['i']->value%3 == 0 && $_smarty_tpl->tpl_vars['i']->value > 0) {?>
+			<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+				<hr />
+			</div>
+		<?php }?>
+		<div class="col-md-4 col-sm-6">
 			<div class="panel panel-default">
-				<div class="panel-heading"><a href="item.php?id=<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+							<a href="item.php?id=<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['product']->value['title'];?>
-</a></div>
+</a>
+						</div>
+						<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+							<span class="pull-left">
+								<?php $_smarty_tpl->tpl_vars['counter'] = new Smarty_Variable(5-$_smarty_tpl->tpl_vars['product']->value['rating'], null, 0);?>
+                    
+		                        <?php $_smarty_tpl->tpl_vars['from'] = new Smarty_Variable;$_smarty_tpl->tpl_vars['from']->step = 1;$_smarty_tpl->tpl_vars['from']->total = (int) ceil(($_smarty_tpl->tpl_vars['from']->step > 0 ? $_smarty_tpl->tpl_vars['product']->value['rating']+1 - (1) : 1-($_smarty_tpl->tpl_vars['product']->value['rating'])+1)/abs($_smarty_tpl->tpl_vars['from']->step));
+if ($_smarty_tpl->tpl_vars['from']->total > 0) {
+for ($_smarty_tpl->tpl_vars['from']->value = 1, $_smarty_tpl->tpl_vars['from']->iteration = 1;$_smarty_tpl->tpl_vars['from']->iteration <= $_smarty_tpl->tpl_vars['from']->total;$_smarty_tpl->tpl_vars['from']->value += $_smarty_tpl->tpl_vars['from']->step, $_smarty_tpl->tpl_vars['from']->iteration++) {
+$_smarty_tpl->tpl_vars['from']->first = $_smarty_tpl->tpl_vars['from']->iteration == 1;$_smarty_tpl->tpl_vars['from']->last = $_smarty_tpl->tpl_vars['from']->iteration == $_smarty_tpl->tpl_vars['from']->total;?>
+		                            <span class="glyphicon glyphicon-star"></span>
+		                        <?php }} ?>
+		                        
+		                        <?php if ($_smarty_tpl->tpl_vars['counter']->value != 0) {?>
+		                            <?php $_smarty_tpl->tpl_vars['from'] = new Smarty_Variable;$_smarty_tpl->tpl_vars['from']->step = 1;$_smarty_tpl->tpl_vars['from']->total = (int) ceil(($_smarty_tpl->tpl_vars['from']->step > 0 ? $_smarty_tpl->tpl_vars['counter']->value+1 - (1) : 1-($_smarty_tpl->tpl_vars['counter']->value)+1)/abs($_smarty_tpl->tpl_vars['from']->step));
+if ($_smarty_tpl->tpl_vars['from']->total > 0) {
+for ($_smarty_tpl->tpl_vars['from']->value = 1, $_smarty_tpl->tpl_vars['from']->iteration = 1;$_smarty_tpl->tpl_vars['from']->iteration <= $_smarty_tpl->tpl_vars['from']->total;$_smarty_tpl->tpl_vars['from']->value += $_smarty_tpl->tpl_vars['from']->step, $_smarty_tpl->tpl_vars['from']->iteration++) {
+$_smarty_tpl->tpl_vars['from']->first = $_smarty_tpl->tpl_vars['from']->iteration == 1;$_smarty_tpl->tpl_vars['from']->last = $_smarty_tpl->tpl_vars['from']->iteration == $_smarty_tpl->tpl_vars['from']->total;?>
+		                                <span class="glyphicon glyphicon-star-empty"></span>    
+		                            <?php }} ?>
+		                        <?php }?>
+							</span>
+						</div>
+					</div>
+				</div>
 				<div class="panel-body">
 			    	<div class="row">
 						<div class="col-md-12">

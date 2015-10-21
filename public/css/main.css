@@ -6,7 +6,7 @@ footer {
 }
 
 body {
-    padding-top: 90px;
+    padding-top: 60px;
 }
 
 footer p {
@@ -14,22 +14,18 @@ footer p {
 }
 
 .price {
-    background-color: #31C763;
-    color: #fff;
-    padding: 4px;
-    border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -o-border-radius: 6px;
+    text-decoration: underline;
 }
 
-.jumbotron {
-    background: url(../img/back.jpg) 100% 55% no-repeat;
+.main-header {
+    background: url(../img/back.jpg) 100% 58% no-repeat;
     background-size: cover;
+    margin-bottom: 40px;
+    height: 200px;
 }
 
-.jumbotron header h1 {
-    color: #fff;
+.main-header h1 {
+    padding-top: 66px;
 }
 
 .glyphicon-star {

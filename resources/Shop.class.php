@@ -110,9 +110,18 @@ class Shop {
     }
 
     // get products by one category
-    public function get_products($id) {
+    public function get_products($id, $sort) {
         $id = $this->esc_string($id);
-        $result = $this->mysqli->query("SELECT * FROM products WHERE product_category_id = {$id} ORDER BY product_title ASC");
+        $sort = $this->esc_string($sort);
+        $sort = trim($sort);
+        $id = trim($id);
+        
+        if (!empty($sort)) {
+            $sort = ($sort == "toup") ? "ASC" : "DESC";
+            $result = $this->mysqli->query("SELECT * FROM products WHERE product_category_id = {$id} ORDER BY product_price {$sort}");
+        } else {
+            $result = $this->mysqli->query("SELECT * FROM products WHERE product_category_id = {$id} ORDER BY product_title ASC");
+        }
 
         if ($result) {
             return $this->confirm($result);
