@@ -113,6 +113,7 @@ class Shop {
     public function get_products($id, $sort) {
         $id = $this->esc_string($id);
         $sort = $this->esc_string($sort);
+        
         $sort = trim($sort);
         $id = trim($id);
         
@@ -128,5 +129,31 @@ class Shop {
         } else {
             return false;
         }
+    }
+    
+    // get similar products
+    public function get_similar_products($id, $current_product_id) {
+        $limit = 3;
+        
+        $id = $this->esc_string($id);
+        $current_product_id = $this->esc_string($current_product_id);
+        
+        // get 3 last products by this category
+        $result = $this->mysqli->query("SELECT * FROM products WHERE product_category_id = {$id} AND product_id NOT LIKE {$current_product_id} ORDER BY product_id DESC LIMIT {$limit}");
+        
+        if ($result) {
+            return $this->confirm($result);
+        } else {
+            return false;
+        }
+    }
+    
+    // change size image
+    public function scaleImage($imagePath) {
+        $imagick = new Imagick(realpath($imagePath));
+        $imagick->scaleImage(180, 150, true);
+        header("Content-Type: image/jpg");
+        
+        return $imagick;
     }
 }    

@@ -82,10 +82,31 @@ $smarty->display("front/header.tpl");
 
                     $category_title = $r_cat['cat_title'];
                     
-                    // assign all to item
+                    // get similar products, limit 3
+                    $similar = $shop->get_similar_products($product['category'], $product_id);
+                    $data_similar = array();
+                    
+                    if ($similar) {
+                        while ($row_similar = $similar->fetch_assoc()) {
+                            $data_similar[] = array(
+                                "id" => $row_similar['product_id'],
+                                "title" => $row_similar['product_title'],
+                                "desc" => $row_similar['product_description'],
+                                "price" => number_format($row_similar['product_price']),
+                                "rating" => $row_similar['product_rating'],
+                                "category" => $row_similar['product_category_id'],
+                                "image" => explode(",", $row_similar['product_image'])[0]
+                            );
+                        }
+                    } else {
+                        echo "ERROR!";    
+                    }
+                    
+                    // assign data to item product template
                     $smarty->assign("product", $product);
                     $smarty->assign("images", $images);
                     $smarty->assign("category_name", $category_title);
+                    $smarty->assign("similar_products", $data_similar);
                     
                     $smarty->display("front/product.tpl");   
                 } else {

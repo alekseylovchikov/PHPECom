@@ -14,3 +14,5 @@
   thrown in /home/ubuntu/workspace/resources/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 44
 [21-Oct-2015 13:39:56 UTC] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "/home/ubuntu/workspace/resources/templates/front/footer.tpl"  on line 44 "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){"  - Unexpected "[", expected one of: "}" <-- 
   thrown in /home/ubuntu/workspace/resources/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 44
+[21-Oct-2015 20:14:21 UTC] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "/home/ubuntu/workspace/resources/templates/front/footer.tpl"  on line 43 "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){"  - Unexpected "[", expected one of: "}" <-- 
+  thrown in /home/ubuntu/workspace/resources/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 43
