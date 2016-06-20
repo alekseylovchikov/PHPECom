@@ -30,6 +30,15 @@ class Shop {
         header("Location: {$location}");
     }
     
+    // confirm return data from query
+    private function confirm($result) {
+        if ($result->num_rows > 0) {
+            return $result;
+        } else {
+            return false;   
+        }
+    }
+    
     // get all categories
     public function get_all_categories() {
         $result = $this->mysqli->query("SELECT cat_id, cat_title FROM categories ORDER BY cat_title ASC");
@@ -49,15 +58,6 @@ class Shop {
             return $result;
         } else {
             die("<p class='alert alert-danger'>Error get categories...<br />" . $this->mysqli->error . "</p>");
-        }
-    }
-    
-    // confirm return data from query
-    private function confirm($result) {
-        if ($result->num_rows > 0) {
-            return $result;
-        } else {
-            return false;   
         }
     }
     
@@ -144,7 +144,7 @@ class Shop {
         if ($result) {
             return $this->confirm($result);
         } else {
-            return false;
+            die("<p class='alert alert-danger'>Error get similar product...<br />" . $this->mysqli->error . "</p>");
         }
     }
     

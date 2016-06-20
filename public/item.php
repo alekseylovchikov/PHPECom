@@ -65,6 +65,7 @@ $smarty->display("front/header.tpl");
                 if ($result) {
                     $r = $result->fetch_assoc();
                     
+                    // put all data for this product
                     $product = array(
                         "id" => $r['product_id'],
                         "title" => $r['product_title'],
@@ -74,6 +75,7 @@ $smarty->display("front/header.tpl");
                         "category" => $r['product_category_id']
                     );
                     
+                    // all images for this product
                     $images = explode(",", $r['product_image']);
 
                     // get category name for this product
@@ -98,8 +100,6 @@ $smarty->display("front/header.tpl");
                                 "image" => explode(",", $row_similar['product_image'])[0]
                             );
                         }
-                    } else {
-                        echo "ERROR!";    
                     }
                     
                     // assign data to item product template
@@ -113,7 +113,7 @@ $smarty->display("front/header.tpl");
                     $smarty->display("front/404.tpl");
                 }
             } else {
-                $shop->redirect("/public/");
+                $shop->redirect("/");
             }
             
             ?>    

@@ -1,2 +1,2 @@
-## PHP E-com
+## PHP E-commerce Site
 by alekseylovchikov

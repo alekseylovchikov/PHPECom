@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <!-- CREATE TPL -->
         <ol class="breadcrumb">
-            <li><a href="/public/">Главная</a></li>
+            <li><a href="/">Главная</a></li>
             <li><a href="category.php?id={$product['category']}">{$category_name}</a></li>
         </ol>
         <!-- -->

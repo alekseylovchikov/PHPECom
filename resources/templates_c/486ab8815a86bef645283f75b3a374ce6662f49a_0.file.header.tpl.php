@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-10-21 17:52:44
+<?php /* Smarty version 3.1.27, created on 2015-10-23 17:11:39
          compiled from "/home/ubuntu/workspace/resources/templates/front/header.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:3480771925627d0ec48f7e2_76946690%%*/
+/*%%SmartyHeaderCode:1865282579562a6a4b9aa140_17635555%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '486ab8815a86bef645283f75b3a374ce6662f49a' => 
     array (
       0 => '/home/ubuntu/workspace/resources/templates/front/header.tpl',
-      1 => 1445431980,
+      1 => 1445620259,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3480771925627d0ec48f7e2_76946690',
+  'nocache_hash' => '1865282579562a6a4b9aa140_17635555',
   'variables' => 
   array (
     'categories' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5627d0ec4a7750_59404820',
+  'unifunc' => 'content_562a6a4ba83a25_06808820',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5627d0ec4a7750_59404820')) {
-function content_5627d0ec4a7750_59404820 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_562a6a4ba83a25_06808820')) {
+function content_562a6a4ba83a25_06808820 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '3480771925627d0ec48f7e2_76946690';
+$_smarty_tpl->properties['nocache_hash'] = '1865282579562a6a4b9aa140_17635555';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -68,7 +68,7 @@ $_smarty_tpl->properties['nocache_hash'] = '3480771925627d0ec48f7e2_76946690';
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/public/">BrandShop</a>
+                    <a class="navbar-brand" href="/">BrandShop</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

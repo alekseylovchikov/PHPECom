@@ -114,7 +114,7 @@ $smarty->display("front/header.tpl");
                 }
             } else {
                 // redirect to home page if get id not set
-                $shop->redirect("/public/");
+                $shop->redirect("/");
             }
             
             ?>    

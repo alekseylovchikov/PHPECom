@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<ol class="breadcrumb">
-			<li><a href="/public/">Главная</a></li>
+			<li><a href="/">Главная</a></li>
 			<li class="active">{$category['title']}</li>
 		</ol>
 	</div>
